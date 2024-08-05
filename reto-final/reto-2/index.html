@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes de Clash Royale</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="carousel-container" id="carouselContainer">
+        <div class="carousel">
+            <button class="nav left" id="prevBtn">&#8249;</button>
+            <div class="card" id="card">
+                <img src="images/golem.png" alt="Golem" id="characterImage">
+                <button class="name-btn" id="nameBtn">Golem</button>
+            </div>
+            <button class="nav right" id="nextBtn">&#8250;</button>
+        </div>
+    </div>
+    <div class="details-container" id="detailsContainer">
+        <div class="details-card">
+            <button class="back-btn" id="backBtn">Volver</button>
+            <div class="details-content" id="detailsContent">
+                <img id="detailsImage" alt="Character">
+            </div>
+            <div>
+                <h1 id="detailsName">Golem</h1>
+                <p id="detailsDescription">Es lento, pero persistente, y solo ataca las estructuras...</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>

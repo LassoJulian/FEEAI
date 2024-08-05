@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Calculadora de propinas</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <div id="calculadoraPropinas">
+            <div id="headerComponent">
+                <h1>Calculadora de propinas</h1>
+            </div>
+            <div id ="mainComponent">
+                <div id="formComponent">
+                    <form id="formularioPropinas">
+                        <h2>Total de la cuenta</h2>
+                        <input type="text" id='saldo' placeholder='Saldo de cuenta en COP'>
+                        <h2>Porcentaje de propina</h2>
+                        <input type="text" id='propina' placeholder='Porcentaje en numeros'><br>
+                        <button type='submit' id='botonPropina'> <h3>Calcular</h3> </button>
+                    </form>
+                </div>
+                <div id="resultadoComponent">
+                    <h2>Resumen</h2>
+                    <p>Total de la cuenta: </p>
+                    <p>Total de la propina: </p>
+                    <p>Total a pagar: </p>
+                </div>
+            </div>  
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>

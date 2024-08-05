@@ -1,0 +1,74 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #1b1b32;
+    color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px;
+  }
+
+#headerComponent{
+    text-align: center;
+    border-bottom: 8px solid white;
+}
+
+#calculadoraPropinas{
+    width: 60vw;
+    max-width: 80%;
+    min-width: 60%;
+    height: 90%;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    border: 8px solid white;
+
+    
+}
+
+
+form {
+    text-align: center;
+}
+
+form button{
+    margin-top: 20px;
+    /* some sort of herency (button from form element) */
+}
+
+#resultadoComponent{
+    margin: 20px 20px 10px 20px;
+    padding: 20px;
+    background-color: rgb(216, 216, 216);
+    border-radius: 40px;
+    color: black;
+}
+
+#resultadoComponent p{
+    text-align: center;
+    /* also herency */
+}
+
+
+button {
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #8f8f8f;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: none;
+
+  }
+  
+button:hover {
+    background-color: #e5e7e6;
+    /* it is also herency but on a pseudoclass */
+  }
+
+input {
+    padding: 10px 40px;
+    background-color: #bbbbbb;
+    color: black;
+    border: none;
+}

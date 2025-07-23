@@ -6,22 +6,26 @@
     <title>Personajes de Clash Royale</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="background"></div>
-    <div class="carousel-container" id="carouselContainer">
-        <div class="carousel">
-            <button class="nav left" id="prevBtn">&#8249;</button>
-            <div class="card" id="card">
-                <img src="images/golem.png" alt="Golem" id="characterImage">
-                <button class="name-btn" id="nameBtn">Golem</button>
+    <div class="main-layout">
+        <h1 class="layout-title">Landing royale</h1>
+        <div class="carousel-container" id="carouselContainer">
+            <div class="carousel">
+                <button class="nav left" id="prevBtn">&#8249;</button>
+                <div class="card" id="card">
+                    <img src="images/golem.png" alt="Golem" id="characterImage">
+                    <button class="name-btn" id="nameBtn" onclick="showDetailsModal()">Golem</button>
+                </div>
+                <button class="nav right" id="nextBtn">&#8250;</button>
             </div>
-            <button class="nav right" id="nextBtn">&#8250;</button>
         </div>
     </div>
     <div class="details-container" id="detailsContainer">
         <div class="details-card">
-            <button class="back-btn" id="backBtn">Volver</button>
+            <button class="back-btn" id="backBtn" onclick="hideDetailsModal()">Volver</button>
             <div class="details-content" id="detailsContent">
                 <img id="detailsImage" alt="Character">
             </div>

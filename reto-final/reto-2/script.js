@@ -22,8 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             detailsName.textContent = name;
             detailsDescription.textContent = description;
             detailsImage.setAttribute('src', img);
-            detailsContainer.style.display = 'flex';
-            carouselContainer.style.display = 'none';
+            showDetailsModal(); // <-- Usa la función aquí
         };
         prevBtn.classList.toggle('disabled', index === 0);
         nextBtn.classList.toggle('disabled', index === characters.length - 1);
@@ -45,10 +44,23 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     backBtn.onclick = () => {
-        detailsContainer.style.display = 'none';
-        carouselContainer.style.display = 'flex';
+        hideDetailsModal(); // <-- Usa la función aquí
     };
+
+    function showDetailsModal() {
+        document.querySelector('.details-container').style.display = 'flex';
+        document.querySelector('.main-layout').classList.add('hide');
+    }
+
+    function hideDetailsModal() {
+        document.querySelector('.details-container').style.display = 'none';
+        document.querySelector('.main-layout').classList.remove('hide');
+    }
 
     // Inicialización
     updateCharacter(currentIndex);
+
+    // Si usas módulos, expón las funciones al window:
+    window.showDetailsModal = showDetailsModal;
+    window.hideDetailsModal = hideDetailsModal;
 });
